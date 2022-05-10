@@ -21,9 +21,11 @@ class House
             "This is the #{phrase(number)}\n"
         when 10
             "This is the #{phrase(number)}\n"
-        when 11
-            "This is the #{phrase(number)}\n"
-        when 12
+        # when 11
+        #     "This is the #{phrase(number)}\n"
+        # when 12
+        #     "This is the #{phrase(number)}\n"
+        else
             "This is the #{phrase(number)}\n"
         end
     end
