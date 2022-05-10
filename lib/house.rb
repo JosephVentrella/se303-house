@@ -35,6 +35,9 @@ class House
         case number
         when 12
             "the horse and the hound and the horn that belonged to"
+        when 11
+            "the farmer sowing his corn that kept"
         end
+        
     end
 end
