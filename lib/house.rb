@@ -16,7 +16,7 @@ class House
         when 7
             "This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         else
-            "This is #{phrase(number)}#{phrase(number -1 )}#{phrase(number -2 )}#{phrase(number -3 )}the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            "This is #{phrase(number)}#{phrase(number -1 )}#{phrase(number -2 )}#{phrase(number -3 )}#{phrase(number -4 )}the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         end
     end
     def recite()
@@ -33,6 +33,8 @@ class House
             "the rooster that crowed in the morn that woke "
         when 9 
             "the priest all shaven and shorn that married "
+        when 8
+            "the man all tattered and torn that kissed "
         else
             ""
         end
