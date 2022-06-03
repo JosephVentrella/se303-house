@@ -3,8 +3,6 @@ class House
         case number
         when 1
             "This is the house that Jack built.\n"
-        when 2
-            "This is #{phrase(number)}#{phrase(number -1 )}#{phrase(number -2 )}#{phrase(number -3 )}#{phrase(number -4 )}#{phrase(number -5 )}#{phrase(number -6 )}#{phrase(number -7 )}#{phrase(number -8 )}#{phrase(number -9 )}#{phrase(number -10 )}the house that Jack built.\n"
         else
             "This is #{phrase(number)}#{phrase(number -1 )}#{phrase(number -2 )}#{phrase(number -3 )}#{phrase(number -4 )}#{phrase(number -5 )}#{phrase(number -6 )}#{phrase(number -7 )}#{phrase(number -8 )}#{phrase(number -9 )}#{phrase(number -10 )}the house that Jack built.\n"
         end
