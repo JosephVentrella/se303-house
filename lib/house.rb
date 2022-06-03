@@ -11,8 +11,6 @@ class House
             "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         when 5
             "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-        when 6
-            "This is #{phrase(number)}#{phrase(number -1 )}#{phrase(number -2 )}#{phrase(number -3 )}#{phrase(number -4 )}#{phrase(number -5 )}#{phrase(number -6 )}the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         else
             "This is #{phrase(number)}#{phrase(number -1 )}#{phrase(number -2 )}#{phrase(number -3 )}#{phrase(number -4 )}#{phrase(number -5 )}#{phrase(number -6 )}the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         end
@@ -34,9 +32,9 @@ class House
         when 8
             "the man all tattered and torn that kissed "
         when 7
-            "the maiden all forlorn that milked"
+            "the maiden all forlorn that milked "
         when 6
-            "the cow with the crumpled horn that tossed"
+            "the cow with the crumpled horn that tossed "
         else
             ""
         end
