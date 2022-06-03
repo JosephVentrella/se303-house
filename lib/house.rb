@@ -8,9 +8,9 @@ class House
         when 3
             "This is the rat that ate the malt that lay in the house that Jack built.\n"
         when 4
-            "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            "This is #{phrase(number)}#{phrase(number -1 )}#{phrase(number -2 )}#{phrase(number -3 )}#{phrase(number -4 )}#{phrase(number -5 )}#{phrase(number -6 )}#{phrase(number -7 )}#{phrase(number -8 )}the rat that ate the malt that lay in the house that Jack built.\n"
         else
-            "This is #{phrase(number)}#{phrase(number -1 )}#{phrase(number -2 )}#{phrase(number -3 )}#{phrase(number -4 )}#{phrase(number -5 )}#{phrase(number -6 )}#{phrase(number -7 )}the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            "This is #{phrase(number)}#{phrase(number -1 )}#{phrase(number -2 )}#{phrase(number -3 )}#{phrase(number -4 )}#{phrase(number -5 )}#{phrase(number -6 )}#{phrase(number -7 )}#{phrase(number -8 )}the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         end
     end
     def recite()
@@ -35,6 +35,8 @@ class House
             "the cow with the crumpled horn that tossed "
         when 5
             "the dog that worried "
+        when 4
+            "the cat that killed "
         else
             ""
         end
