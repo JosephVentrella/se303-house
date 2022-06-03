@@ -1,6 +1,6 @@
 class House
     def line(number)
-        "This is #{phrase(number)}#{phrase(number -1 )}#{phrase(number -2 )}#{phrase(number -3 )}#{phrase(number -4 )}#{phrase(number -5 )}#{phrase(number -6 )}#{phrase(number -7 )}#{phrase(number -8 )}#{phrase(number -9 )}#{phrase(number -10 )}the house that Jack built.\n"
+        "This is #{number.downto(1).collect { |n| phrase(n) }.join("")}the house that Jack built.\n"
     end
     def recite()
         (1..12).map{|n| line(n)}.join("\n")
