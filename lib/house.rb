@@ -23,29 +23,29 @@ class House
 	]
         case number
         when 12
-            "the horse and the hound and the horn that belonged to "
+            phrases[number - 1]
         when 11
-            "the farmer sowing his corn that kept "
+            phrases[number - 1]
         when 10
-            "the rooster that crowed in the morn that woke "
+            phrases[number - 1]
         when 9 
-            "the priest all shaven and shorn that married "
+            phrases[number - 1]
         when 8
-            "the man all tattered and torn that kissed "
+            phrases[number - 1]
         when 7
-            "the maiden all forlorn that milked "
+            phrases[number - 1]
         when 6
-            "the cow with the crumpled horn that tossed "
+            phrases[number - 1]
         when 5
-            "the dog that worried "
+            phrases[number - 1]
         when 4
-            "the cat that killed "
+            phrases[number - 1]
         when 3
-            "the rat that ate "
+            phrases[number - 1]
         when 2
-            "the malt that lay in "
+            phrases[number - 1]
         else
-            ""
+            phrases[number - 1]
         end
         
     end
