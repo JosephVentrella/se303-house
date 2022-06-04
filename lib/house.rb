@@ -21,32 +21,6 @@ class House
 		"the farmer sowing his corn that kept ",
 		"the horse and the hound and the horn that belonged to "
 	]
-        case number
-        when 12
-            phrases[number - 1]
-        when 11
-            phrases[number - 1]
-        when 10
-            phrases[number - 1]
-        when 9 
-            phrases[number - 1]
-        when 8
-            phrases[number - 1]
-        when 7
-            phrases[number - 1]
-        when 6
-            phrases[number - 1]
-        when 5
-            phrases[number - 1]
-        when 4
-            phrases[number - 1]
-        when 3
-            phrases[number - 1]
-        when 2
-            phrases[number - 1]
-        else
-            phrases[number - 1]
-        end
-        
+    phrases[number - 1]     
     end
 end
