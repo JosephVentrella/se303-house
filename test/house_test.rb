@@ -183,4 +183,9 @@ Thar be the horse and the hound and the horn that belonged to the farmer sowing 
     assert_equal expected, HousePirate.new.recite
   end
 
+  def test_random_house_line_1
+    expected = "This is the house that Jack built.\n"
+    assert_equal expected, HouseRandom.new.line(1)
+  end
+
 end
