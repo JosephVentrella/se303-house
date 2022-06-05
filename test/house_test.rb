@@ -109,4 +109,19 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
     assert_equal expected, House.new.pirate_line(3)
   end
 
+  def test_pirate_fourth_line
+    expected = "Thar be the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+    assert_equal expected, House.new.pirate_line(4)
+  end
+
+  def test_pirate_fith_line
+    expected = "Thar be the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+    assert_equal expected, House.new.pirate_line(5)
+  end
+
+  def test_pirate_sixth_line
+    expected = "Thar be the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+    assert_equal expected, House.new.pirate_line(6)
+  end
+
 end
