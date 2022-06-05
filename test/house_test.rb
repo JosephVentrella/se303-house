@@ -96,12 +96,17 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
 
   def test_pirate_first_line
     expected = "Thar be the house that Jack built.\n"
-    assert_equal expected, House.new.first_pirate_line(1)
+    assert_equal expected, House.new.pirate_line(1)
   end
 
   def test_pirate_second_line
     expected = "Thar be the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.first_pirate_line(2)
+    assert_equal expected, House.new.pirate_line(2)
+  end
+
+  def test_pirate_third_line
+    expected = "Thar be the rat that ate the malt that lay in the house that Jack built.\n"
+    assert_equal expected, House.new.pirate_line(3)
   end
 
 end
