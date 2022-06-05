@@ -4,7 +4,7 @@ class House
         when "house"
             "#{line_opening(type)}#{number.downto(1).collect { |n| phrase(n) }.join("")}the house that Jack built.\n"
         when "pirate"
-            "Thar be #{number.downto(1).collect { |i| phrase(i) }.join("")}the house that Jack built.\n"
+            "#{line_opening(type)}#{number.downto(1).collect { |i| phrase(i) }.join("")}the house that Jack built.\n"
         end
     end
 
@@ -12,8 +12,13 @@ class House
         (1..12).map{|n| line(n, type)}.join("\n")
     end
 
-    def line_opening(type ="FIXMELATER")
-        "This is "
+    def line_opening(type)
+        case type
+        when "house"
+            "This is "
+        when "pirate"
+            "Thar be "
+        end
     end
 
     def phrase(number)
