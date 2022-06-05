@@ -35,3 +35,7 @@ class HousePirate < House
         "Thar be "
     end
 end
+
+class HouseRandom < House
+end
+        
