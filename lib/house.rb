@@ -8,8 +8,8 @@ class House
         end
     end
 
-    def recite()
-        (1..12).map{|n| line(n)}.join("\n")
+    def recite(type= "house")
+        (1..12).map{|n| line(n, type)}.join("\n")
     end
 
     def phrase(number)
