@@ -2,6 +2,11 @@ class House
     def line(number)
         "This is #{number.downto(1).collect { |n| phrase(n) }.join("")}the house that Jack built.\n"
     end
+
+    def first_pirate_line(number)
+		"Thar be #{number.downto(1).collect { |i| phrase(i) }.join("")}the house that Jack built.\n"
+	end
+    
     def recite()
         (1..12).map{|n| line(n)}.join("\n")
     end
