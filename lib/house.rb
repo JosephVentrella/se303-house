@@ -34,3 +34,9 @@ class House
     phrases[number - 1]     
     end
 end
+
+class HousePirate < House
+    def line_opening
+        "Thar be "
+    end
+end
