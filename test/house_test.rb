@@ -101,57 +101,57 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
 
   def test_pirate_second_line
     expected = "Thar be the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(2)
+    assert_equal expected, House.new.line(2, "pirate")
   end
 
   def test_pirate_third_line
     expected = "Thar be the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(3)
+    assert_equal expected, House.new.line(3, "pirate")
   end
 
   def test_pirate_fourth_line
     expected = "Thar be the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(4)
+    assert_equal expected, House.new.line(4, "pirate")
   end
 
   def test_pirate_fith_line
     expected = "Thar be the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(5)
+    assert_equal expected, House.new.line(5, "pirate")
   end
 
   def test_pirate_sixth_line
     expected = "Thar be the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(6)
+    assert_equal expected, House.new.line(6, "pirate")
   end
 
   def test_pirate_seventh_line
     expected = "Thar be the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(7)
+    assert_equal expected, House.new.line(7, "pirate")
   end
 
   def test_pirate_eigth_line
     expected = "Thar be the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(8)
+    assert_equal expected, House.new.line(8, "pirate")
   end
 
   def test_pirate_nineth_line
     expected = "Thar be the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(9)
+    assert_equal expected, House.new.line(9, "pirate")
   end
 
   def test_pirate_tenth_line
     expected = "Thar be the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(10)
+    assert_equal expected, House.new.line(10, "pirate")
   end
 
   def test_pirate_leventh_line
     expected = "Thar be the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(11)
+    assert_equal expected, House.new.line(11, "pirate")
   end
 
   def test_pirate_twelth_line
     expected = "Thar be the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.pirate_line(12)
+    assert_equal expected, House.new.line(12, "pirate")
   end
 
 end
