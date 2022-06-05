@@ -1,11 +1,6 @@
 class House
     def line(number, type = "house")
-        case type
-        when "house"
-            "#{line_opening(type)}#{number.downto(1).collect { |n| phrase(n) }.join("")}the house that Jack built.\n"
-        when "pirate"
-            "#{line_opening(type)}#{number.downto(1).collect { |i| phrase(i) }.join("")}the house that Jack built.\n"
-        end
+        "#{line_opening(type)}#{number.downto(1).collect { |i| phrase(i) }.join("")}the house that Jack built.\n"
     end
 
     def recite(type= "house")
