@@ -193,4 +193,9 @@ Thar be the horse and the hound and the horn that belonged to the farmer sowing 
     assert_equal expected, HousePirateRandom.new.line(1)
   end
 
+  def test_verb_noun_house
+    expected = "This is the cat that killed the house that Jack built.\n"
+    assert_equal expected, RandomVerbNounHouse.new.line(2)
+  end
+
 end

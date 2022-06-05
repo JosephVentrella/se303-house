@@ -15,20 +15,36 @@ class House
         "the horse and the hound and the horn "
         ]
     end
+
+    def verbs
+        [
+            "that lay in ",
+            "that ate ",
+            "that killed ",
+            "that worried ",
+            "that tossed ",
+            "that milked ",
+            "that kissed ",
+            "that married ",
+            "that woke ",
+            "that kept ",
+            "that belonged to "
+        ]
+    end
     def phrases 
         [
         "",
-		"#{nouns[0]}that lay in ",
-		"#{nouns[1]}that ate ",
-		"#{nouns[2]}that killed ",
-		"#{nouns[3]}that worried ",
-		"#{nouns[4]}that tossed ",
-		"#{nouns[5]}that milked ",
-		"#{nouns[6]}that kissed ",
-		"#{nouns[7]}that married ",
-		"#{nouns[8]}that woke ",
-		"#{nouns[9]}that kept ",
-		"#{nouns[10]}that belonged to "
+		"#{nouns[0]}#{verbs[0]}",
+		"#{nouns[1]}#{verbs[1]}",
+		"#{nouns[2]}#{verbs[2]}",
+		"#{nouns[3]}#{verbs[3]}",
+		"#{nouns[4]}#{verbs[4]}",
+		"#{nouns[5]}#{verbs[5]}",
+		"#{nouns[6]}#{verbs[6]}",
+		"#{nouns[7]}#{verbs[7]}",
+		"#{nouns[8]}#{verbs[8]}",
+		"#{nouns[9]}#{verbs[9]}",
+		"#{nouns[10]}#{verbs[10]}"
 	    ]
     end
 
@@ -85,6 +101,13 @@ class RandomVerbNounHouse < House
     #     super.shuffle
     # end
     def nouns
+        super.shuffle(random: Random.new(1))
+    end
+
+    # def verbs
+    #     super.shuffle
+    # end
+    def verbs
         super.shuffle(random: Random.new(1))
     end
 end
