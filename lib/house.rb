@@ -41,5 +41,8 @@ class HousePirate < House
 end
 
 class HouseRandom < House
+    def phrases
+        super.shuffle
+    end
 end
         
