@@ -1,19 +1,34 @@
 class House
 
+    def nouns
+        [
+        "the malt ",
+        "the rat ",
+        "the cat ",
+        "the dog ",
+        "the cow with the crumpled horn ",
+        "the maiden all forlorn ",
+        "the man all tattered and torn ",
+        "the priest all shaven and shorn ",
+        "the rooster that crowed in the morn ",
+        "the farmer sowing his corn ",
+        "the horse and the hound and the horn "
+        ]
+    end
     def phrases 
         [
         "",
-		"the malt that lay in ",
-		"the rat that ate ",
-		"the cat that killed ",
-		"the dog that worried ",
-		"the cow with the crumpled horn that tossed ",
-		"the maiden all forlorn that milked ",
-		"the man all tattered and torn that kissed ",
-		"the priest all shaven and shorn that married ",
-		"the rooster that crowed in the morn that woke ",
-		"the farmer sowing his corn that kept ",
-		"the horse and the hound and the horn that belonged to "
+		"#{nouns[0]}that lay in ",
+		"#{nouns[1]}that ate ",
+		"#{nouns[2]}that killed ",
+		"#{nouns[3]}that worried ",
+		"#{nouns[4]}that tossed ",
+		"#{nouns[5]}that milked ",
+		"#{nouns[6]}that kissed ",
+		"#{nouns[7]}that married ",
+		"#{nouns[8]}that woke ",
+		"#{nouns[9]}that kept ",
+		"#{nouns[10]}that belonged to "
 	    ]
     end
 
@@ -61,5 +76,8 @@ class HousePirateRandom < HousePirate
         super.shuffle(random: Random.new(1))
     end
     
+end
+
+class RandomVerbNounHouse < House
 end
         
