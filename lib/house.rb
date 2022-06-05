@@ -1,19 +1,14 @@
 class House
-    def line(number, type = "house")
-        "#{line_opening(type)}#{number.downto(1).collect { |i| phrase(i) }.join("")}the house that Jack built.\n"
+    def line(number)
+        "#{line_opening()}#{number.downto(1).collect { |i| phrase(i) }.join("")}the house that Jack built.\n"
     end
 
-    def recite(type= "house")
-        (1..12).map{|n| line(n, type)}.join("\n")
+    def recite
+        (1..12).map{|n| line(n)}.join("\n")
     end
 
-    def line_opening(type)
-        case type
-        when "house"
-            "This is "
-        when "pirate"
-            "Thar be "
-        end
+    def line_opening()
+        "This is "
     end
 
     def phrase(number)
