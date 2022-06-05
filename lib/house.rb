@@ -12,6 +12,10 @@ class House
         (1..12).map{|n| line(n, type)}.join("\n")
     end
 
+    def line_opening(type ="FIXMELATER")
+        "This is "
+    end
+
     def phrase(number)
         phrases = [		
         "",	
