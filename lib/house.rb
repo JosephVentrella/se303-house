@@ -1,6 +1,7 @@
 class House
 
-    @@phrases = [
+    def phrases 
+        [
         "",
 		"the malt that lay in ",
 		"the rat that ate ",
@@ -13,7 +14,9 @@ class House
 		"the rooster that crowed in the morn that woke ",
 		"the farmer sowing his corn that kept ",
 		"the horse and the hound and the horn that belonged to "
-	]
+	    ]
+    end
+
     def line(number)
         "#{line_opening()}#{number.downto(1).collect { |i| phrase(i) }.join("")}the house that Jack built.\n"
     end
@@ -27,7 +30,7 @@ class House
     end
 
     def phrase(number)
-    @@phrases[number - 1]     
+        phrases[number - 1]
     end
 end
 
