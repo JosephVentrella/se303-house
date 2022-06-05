@@ -1,6 +1,11 @@
 class House
-    def line(number)
-        "This is #{number.downto(1).collect { |n| phrase(n) }.join("")}the house that Jack built.\n"
+    def line(number, type = "house")
+        case type
+        when "house"
+            "This is #{number.downto(1).collect { |n| phrase(n) }.join("")}the house that Jack built.\n"
+        when "pirate"
+            "Thar be #{number.downto(1).collect { |i| phrase(i) }.join("")}the house that Jack built.\n"
+        end
     end
 
     def pirate_line(number)
